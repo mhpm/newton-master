@@ -24,7 +24,7 @@ const SpriteAnimator = ({ image, speed, className }: Props) => {
 
   useEffect(() => {
     getImageSize();
-  }, []);
+  }, [getImageSize]);
 
   return (
     <div className={className}>

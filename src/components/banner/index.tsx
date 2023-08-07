@@ -6,7 +6,7 @@ type Props = {
   children?: ReactNode;
 };
 
-function Banner({ children, className }: Props) {
+const Banner = ({ children, className }: Props) => {
   return (
     <Container className={['banner', className].join(' ')}>
       {children}
@@ -28,17 +28,17 @@ Banner.Image = function BannerImage({
   );
 };
 
-Banner.Title = function ({ title, className }: { title: string } & Props) {
+Banner.Title = function BannerTitle({ title, className }: { title: string } & Props) {
   return (
     <Title className={['banner_title', className].join(' ')}>{title}</Title>
   );
 };
 
-Banner.Desc = function ({ desc, className }: { desc: string } & Props) {
+Banner.Desc = function BannerDesc({ desc, className }: { desc: string } & Props) {
   return <Desc className={['banner_desc', className].join(' ')}>{desc}</Desc>;
 };
 
-Banner.Footer = function ({ className, children }: Props) {
+Banner.Footer = function BannerFooter({ className, children }: Props) {
   return (
     <Footer className={['baneer_footer', className].join(' ')}>
       {children}

@@ -83,12 +83,12 @@ export default function Home() {
         <h1 className="text-3xl font-semibold mt-5">
           Bienvenido a Isaac Newton App
         </h1>
-        <p className="text-center text-xl my-7">
+        <p className="text-center text-xl my-7 text-neutral-400">
           Aplicación en la cual te mostraremos algo de la biografía del celebre
           científico Isaac Newton y sus 3 famosas leyes del movimiento.
         </p>
         <Button className="bg-sky-400 px-5 py-3 rounded-full">
-          <Link href="/">Continuar</Link>
+          <Link href="/menu">Continuar</Link>
         </Button>
       </div>
       <CopyRight>

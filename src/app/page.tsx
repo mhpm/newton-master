@@ -1,9 +1,10 @@
 'use client';
 
-import Link from 'next/link';
-import { SpriteAnimator, Button } from '@/components';
-import newtonSprite from '../../public/img/newton_welcome_sprite.png';
 import styled from 'styled-components';
+import { SpriteAnimator } from '@/components';
+import newtonSprite from '../../public/img/newton_welcome_sprite.png';
+import NextLink from "next/link";
+import { Button, Link } from '@nextui-org/react';
 import { useState } from 'react';
 // import { useEffect } from 'react';
 
@@ -87,15 +88,22 @@ export default function Home() {
           Aplicación en la cual te mostraremos algo de la biografía del celebre
           científico Isaac Newton y sus 3 famosas leyes del movimiento.
         </p>
-        <Button className="bg-sky-400 px-5 py-3 rounded-full">
-          <Link href="/menu">Continuar</Link>
+        <Button
+          href="/menu"
+          as={NextLink}
+          size="lg"
+          color="primary"
+          variant="faded"
+        >
+          Continuar
         </Button>
       </div>
       <CopyRight>
         Developed by{' '}
         <Link
-          rel="noreferrer"
-          target="_blank"
+          showAnchorIcon
+          isExternal
+          underline="hover"
           href="https://www.linkedin.com/in/mhpm/"
         >
           Michelle Perez Morales

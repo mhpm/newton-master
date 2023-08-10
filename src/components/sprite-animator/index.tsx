@@ -3,7 +3,9 @@
 import { useEffect, useState } from 'react';
 import { SpriteImage } from './sprite-animator.styles';
 import { StaticImageData } from 'next/image';
-import Spinner from '../spinner';
+import {CircularProgress} from "@nextui-org/react";
+
+
 
 interface Props {
   image: StaticImageData;
@@ -36,7 +38,7 @@ const SpriteAnimator = ({ image, speed, className }: Props) => {
           speed={speed}
         />
       ) : (
-        <Spinner />
+        <CircularProgress color="primary" aria-label="Loading..." />
       )}
     </div>
   );

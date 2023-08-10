@@ -1,22 +1,29 @@
 'use client';
 
-import { Button } from '@/components';
+import NextLink from 'next/link';
+import { Button, Link } from '@nextui-org/react';
 
 const MainMenuPage: React.FunctionComponent = () => {
   return (
     <div className="main-container flex-col items-center">
       <div>
-        <Button>BIOGRAFÍA</Button>
+        <Button size="lg" color="primary" variant="faded">
+          BIOGRAFÍA
+        </Button>
       </div>
       <div className="my-10">
-        <Button>LEYES DE NEWTON</Button>
+        <Button href="/laws" as={NextLink} size="lg" color="primary" variant="faded">
+          LEYES DE NEWTON
+        </Button>
       </div>
       <div>
-        <Button>EJERCICIOS</Button>
+        <Button size="lg" color="primary" variant="faded">
+          EJERCICIOS
+        </Button>
       </div>
-      <Button mode="link" role="link" href="/" className='mt-[100px]'>
+      <Link underline="hover" as={NextLink} href="/" className="mt-[100px]">
         Volver al Inicio
-      </Button>
+      </Link>
     </div>
   );
 };

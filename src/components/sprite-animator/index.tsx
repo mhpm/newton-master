@@ -3,9 +3,7 @@
 import { useEffect, useState } from 'react';
 import { SpriteImage } from './sprite-animator.styles';
 import { StaticImageData } from 'next/image';
-import {CircularProgress} from "@nextui-org/react";
-
-
+import { CircularProgress } from '@nextui-org/react';
 
 interface Props {
   image: StaticImageData;

@@ -5,7 +5,7 @@ import { SpriteAnimator } from '@/components';
 import newtonSprite from '../../public/img/newton_welcome_sprite.png';
 import NextLink from "next/link";
 import { Button, Link } from '@nextui-org/react';
-import { useState } from 'react';
+// import { useState } from 'react';
 // import { useEffect } from 'react';
 
 const CopyRight = styled.div`
@@ -23,9 +23,9 @@ const Version = styled.div`
   color: #7c7c7c;
 `;
 
-// interface INumbers {
-//   [key: string]: number;
-// }
+interface INumbers {
+  [key: string]: number;
+}
 
 // const alphabetic: INumbers = {
 //   a: 1,
@@ -58,7 +58,7 @@ const Version = styled.div`
 // };
 
 export default function Home() {
-  const [main, setMain] = useState(true);
+  // const [main, setMain] = useState(true);
   // const getNumber = (name: string): number => {
   //   let result = 0;
 
@@ -70,7 +70,7 @@ export default function Home() {
   // };
 
   // useEffect(() => {
-  //   console.log(getNumber('') + getNumber(''))
+  //   console.log(getNumber('genesis'))
   // },[]);
 
   return (

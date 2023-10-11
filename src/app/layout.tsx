@@ -17,7 +17,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className='dark purple-dark'>
+    <html lang="es" className="dark purple-dark">
       <body className={`bg-neutral-800 ${relaway.className}`}>
         <StyledComponentsRegistry>
           <Providers>{children}</Providers>
